@@ -1,8 +1,8 @@
 {
-  "name": "polygonChecker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "points-in-polygon",
+  "version": "1.0.1",
+  "description": "JS Points In Polygon",
+  "main": "pointsInPolygon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
