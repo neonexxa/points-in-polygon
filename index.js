@@ -1,18 +1,18 @@
 const { isInsidePolygon } = require('./pointsInPolygon');
-const testFunc = ({within, polygon_point, coordinates}) => {
-  
+const testFunc = ({ within, polygon_point, coordinates }) => {
+
   coordinates.map((coordinate) => {
     const withinResult = isInsidePolygon(coordinate, polygon_point);
     const expected = within ? "Within" : "OutOfBoundary";
     console.log('Testing coordinate: ', coordinate)
-    console.log(`Expected (${expected}): `,within? withinResult : !withinResult)
+    console.log(`Expected (${expected}): `, within ? withinResult : !withinResult)
   });
 };
 let polygon_point, testCoordinates;
 
 // Test 1
 console.log('Test 1');
-polygon_point = ["12 11","0 10","0 0","10 0","12 11"];
+polygon_point = ["12 11", "0 10", "0 0", "10 0", "12 11"];
 console.log('Polygon:', polygon_point)
 data = {
   within: true,
@@ -31,7 +31,7 @@ testFunc(data);
 
 // Test 2
 console.log('Test 2');
-polygon_point = ["111 110","100 110","100 100","111 100","111 110"];
+polygon_point = ["111 110", "100 110", "100 100", "111 100", "111 110"];
 console.log('Polygon:', polygon_point)
 data = {
   within: true,
